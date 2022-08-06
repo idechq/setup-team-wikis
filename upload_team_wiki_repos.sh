@@ -20,7 +20,7 @@ while IFS="" read -r team_name || [ -n "${team_name}" ]; do
         git remote add origin "${repo_ssh_url}" &&
         git add --all &&
         git commit -m "Setup repository" &&
-        git push origin main
+        git -c "core.sshCommand=ssh -i ~/.ssh/id_ed25519 -F /dev/null" push origin main
 
 done <teams.txt
 
