@@ -31,3 +31,17 @@ Run this on a Unix environment (e.g. WSL2 Ubuntu-20.04)
     ```shell
     bash setup-end-to-end.sh
     ```
+
+## Freeze team wiki
+
+Python is needed
+
+### Dependecies
+
+- pandas
+
+### Instruction
+
+Run the notebook from top to bottom.
+
+DO NOT commit any changes of the notebook back to this repository.
